@@ -1,0 +1,34 @@
+# `coverage` configurations
+[tool.coverage.run]
+source = [
+    "./hooks",
+    "./my_package1/src"
+]
+omit = [
+    "./example_1/src/my_package1/run_pipeline.py"
+]
+
+[tool.coverage.omit]
+
+[tool.coverage.report]
+exclude_lines = [
+    "if __name__ == .__main__.:"
+]
+
+# `isort` configurations
+[tool.isort]
+profile = "black"
+
+# `pytest` configurations
+[tool.pytest.ini_options]
+addopts = [
+    "-vv",
+    "--doctest-modules",
+    "--ignore='./docs/'",
+    "--ignore='./example/'",
+    "--ignore='./my_package1/docs/'"
+]
+doctest_optionflags = "NORMALIZE_WHITESPACE"
+testpaths = [
+    "./tests"
+]
