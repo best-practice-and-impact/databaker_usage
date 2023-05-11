@@ -71,6 +71,22 @@ def DuplicateCellValueOverride(self, cells_to_override, cell_to_duplicate):
 
 
 def create_dimension(table, dim_title, dim_settings):
+    """Create a dimension for your observations. E.g. row or column headers
+
+    Parameters
+    ----------
+    table : cell bag
+        cell bag of all the cells in the table
+    dim_title : str
+        The title for the dimension
+    dim_settings : dict
+        Configurations for the dimension
+
+    Returns
+    -------
+    Databaker HDim
+        Databaker dimension with the configured values
+    """
     cells = (
         table.excel_ref(dim_settings["cell_range"]).is_not_blank().is_not_whitespace()
     )
@@ -93,6 +109,20 @@ def create_dimension(table, dim_title, dim_settings):
 
 
 def create_conversion_segment(table, config):
+    """Create a databaker conversion segment using a config
+
+    Parameters
+    ----------
+    table : Cell bag
+        Cell bag of all the cells within a table
+    config : dict
+        configuration needed to extract data from cell bag
+
+    Returns
+    -------
+    Databaker ConversionSegment
+        A ConversionSegment with the extracted values
+    """
     dimensions = []
     for dim_title, dim_settings in config["dimensions"].items():
         dim = create_dimension(table, dim_title, dim_settings)
@@ -107,7 +137,18 @@ def create_conversion_segment(table, config):
 
 
 def load_and_create_dataframe(config):
+    """Load data, extract useful information and convert data to pandas dataframe
 
+    Parameters
+    ----------
+    config : dict
+        configuration to extract data from messy csv
+
+    Returns
+    -------
+    Dataframe
+        Pandas dataframe with a row per observation and column per dimension.
+    """
     table = load_table(config)
     conversion_segment = create_conversion_segment(table, config)
     df = conversion_segment.topandas()
