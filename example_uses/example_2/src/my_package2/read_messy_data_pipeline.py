@@ -1,6 +1,10 @@
 import json
 
-from my_package2.read_data.read_messy_data import create_conversion_segment, load_table
+from my_package2.read_data.read_messy_data import (
+    clean_data,
+    create_conversion_segment,
+    load_table,
+)
 
 
 def run_pipeline():
@@ -14,8 +18,9 @@ def run_pipeline():
     conversion_segment = create_conversion_segment(table, config)
     df = conversion_segment.topandas()
 
+    df = clean_data(df)
+
     df.to_csv("data/tidy_data.csv")
-    print(df)
 
 
 if __name__ == "__main__":

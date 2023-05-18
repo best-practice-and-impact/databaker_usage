@@ -154,3 +154,43 @@ def load_and_create_dataframe(config):
     df = conversion_segment.topandas()
 
     return df
+
+
+def reduce_string_len(string, length=3):
+    """Reduce the length of a string to a given length
+
+    Parameters
+    ----------
+    string : str
+        string to shorten
+    length : int, optional
+        The length to shorten a string to, by default 3
+
+    Returns
+    -------
+    str
+        The shortened string
+    """
+    return string[:length]
+
+
+def clean_data(df):
+    """Clean the data of special characters and bring string data
+    down to a common length
+
+    Parameters
+    ----------
+    df : pd.Dataframe
+        Dataframe to clean
+
+    Returns
+    -------
+    pd.Dataframe
+        Cleaned data
+    """
+    df["Month"] = df["Month"].str.replace("¹", "", regex=True)
+    df["Month"] = df["Month"].str.replace("†", "", regex=True)
+
+    df["Month"] = df["Month"].apply(reduce_string_len)
+
+    return df
