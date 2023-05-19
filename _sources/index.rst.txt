@@ -12,6 +12,8 @@ Welcome to DATABAKER_USAGE's documentation!
 
    modules
 
+.. mdinclude:: ../CODE_OF_CONDUCT.md
+.. mdinclude:: ../CONTRIBUTING.md
 .. mdinclude:: ../README.md
 
 Indices and tables
