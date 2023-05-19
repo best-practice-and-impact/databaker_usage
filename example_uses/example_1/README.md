@@ -1,6 +1,6 @@
-# `example_2`
+# `example_1`
 
-An example pipeline/package that uses the databaker package
+An example pipeline/package that uses the databaker package. This example looks at how internet users in different age groups change between 2013 to 2020.
 
 ```{warning}
 Where this documentation refers to the root folder we mean where this README.md is
@@ -27,21 +27,12 @@ package code, you do not have to reinstall it for the changes to take effect.
 Remember to update the setup and requirement files inline with any changes to your
 package. The inital files contain the bare minimum to get you started.
 
-## Running the pipeline scripts
-### Read the messy csv
+## Running the pipeline script
 
-This package has two pipeline scripts. The first is `read_messy_data_pipeline.py`. This script reads in a messy csv (a csv that would be difficult to read in another way. e.g. using pandas) and saves a tidy version as a csv.
-
-To use this pipeline script you must amend the `read_data_config.json` to reflect the data you wish to scrape (if you are directly using this example no changes are required). After this you can run the pipeline, from the root of this example (inside the example_2 folder), by entering the following into the terminal.
+To run this example pipeline, first ensure the `pipeline_config.json` file is updated to match any changes you've made (if no changes are made after the git clone the config should work without changes). After this run the following command from the root of this example (inside the example_1 folder):
 
 ```shell
-python src/my_package2/read_messy_data_pipeline.py
-```
-
-The second pipeline script is the `analysis_pipeline.py`. This is a basic analysis on the tidy data to show an example usage. Before running the script change the `analysis_config.json` file to match your requirements (if you are directly using this example no changes are required). After that you can run the pipeline using the following command in the terminal.
-
-```shell
-python src/my_package2/analysis_pipeline.py
+python src/my_package1/run_pipeline.py
 ```
 
 Alternatively, most Python IDE's allow you to run the code directly from the IDE using a `run` button.

@@ -1,6 +1,6 @@
 # `example_2`
 
-An example pipeline/package that uses the databaker package
+An example pipeline/package that uses the databaker package. This example looks at the most popular holiday destination (for UK citizens) across different months/years.
 
 ```{warning}
 Where this documentation refers to the root folder we mean where this README.md is
@@ -37,6 +37,8 @@ To use this pipeline script you must amend the `read_data_config.json` to reflec
 ```shell
 python src/my_package2/read_messy_data_pipeline.py
 ```
+
+### Run the anlysis
 
 The second pipeline script is the `analysis_pipeline.py`. This is a basic analysis on the tidy data to show an example usage. Before running the script change the `analysis_config.json` file to match your requirements (if you are directly using this example no changes are required). After that you can run the pipeline using the following command in the terminal.
 
