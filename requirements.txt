@@ -1,2 +1,6 @@
 ipython==7.16.1
 databaker
+Sphinx
+m2r2
+detect-secrets==1.0.3
+pre-commit==3.2.2
