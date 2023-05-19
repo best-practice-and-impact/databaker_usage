@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Databaker Functions &#8212; DATABAKER_USAGE  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="databaker_usage" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="databaker-functions">
+<h1>Databaker Functions<a class="headerlink" href="#databaker-functions" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-databaker_functions.useful_functions">
+<span id="databaker-functions-useful-functions"></span><h2>databaker_functions.useful_functions<a class="headerlink" href="#module-databaker_functions.useful_functions" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.ConversionSegment">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">databaker_functions.useful_functions.</span></span><span class="sig-name descname"><span class="pre">ConversionSegment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lobservations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">processTIMEUNIT</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includecellxy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.ConversionSegment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Single output table object generated from a bag of observations that look up to a list of dimensions</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.ConversionSegment.consolidatedcellvalueoverride">
+<span class="sig-name descname"><span class="pre">consolidatedcellvalueoverride</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.ConversionSegment.consolidatedcellvalueoverride" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.ConversionSegment.dsubsets">
+<span class="sig-name descname"><span class="pre">dsubsets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.ConversionSegment.dsubsets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.ConversionSegment.fixtimefromtimeunit">
+<span class="sig-name descname"><span class="pre">fixtimefromtimeunit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.ConversionSegment.fixtimefromtimeunit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.ConversionSegment.guesstimeunit">
+<span class="sig-name descname"><span class="pre">guesstimeunit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.ConversionSegment.guesstimeunit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.ConversionSegment.lookupobs">
+<span class="sig-name descname"><span class="pre">lookupobs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ob</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.ConversionSegment.lookupobs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.ConversionSegment.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.ConversionSegment.process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.ConversionSegment.topandas">
+<span class="sig-name descname"><span class="pre">topandas</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.ConversionSegment.topandas" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.HDim">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">databaker_functions.useful_functions.</span></span><span class="sig-name descname"><span class="pre">HDim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hbagset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cellvalueoverride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.HDim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Dimension object which defines the lookup between an observation cell and a bag of header cells</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.HDim.AddCellValueOverride">
+<span class="sig-name descname"><span class="pre">AddCellValueOverride</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">overridecell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overridevalue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.HDim.AddCellValueOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>Override the value of a header cell (and insert it if not present in the bag)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.HDim.celllookup">
+<span class="sig-name descname"><span class="pre">celllookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scell</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.HDim.celllookup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lookup function from a given cell to the matching header cell</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.HDim.cellvalobs">
+<span class="sig-name descname"><span class="pre">cellvalobs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ob</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.HDim.cellvalobs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Full lookup from a observation cell to its dimensional value (which can apply before lookup)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.HDim.checkvalues">
+<span class="sig-name descname"><span class="pre">checkvalues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vlist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.HDim.checkvalues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that the header cell values match</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.HDim.discardcellsnotlookedup">
+<span class="sig-name descname"><span class="pre">discardcellsnotlookedup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.HDim.discardcellsnotlookedup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove header cells to which none of the observation cells looks up to</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.HDim.headcellval">
+<span class="sig-name descname"><span class="pre">headcellval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hcell</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.HDim.headcellval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract the string value of a member header cell (including any value overrides)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.HDim.valueslist">
+<span class="sig-name descname"><span class="pre">valueslist</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.HDim.valueslist" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of all the header cell values</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="databaker_functions.useful_functions.loadxlstabs">
+<span class="sig-prename descclassname"><span class="pre">databaker_functions.useful_functions.</span></span><span class="sig-name descname"><span class="pre">loadxlstabs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sheetids</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'*'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#databaker_functions.useful_functions.loadxlstabs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">DATABAKER_USAGE</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">databaker_usage</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Databaker Functions</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">databaker_usage</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">databaker_usage</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, best-practice-and-impact.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/useful_functions.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
